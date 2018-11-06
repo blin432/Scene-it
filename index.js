@@ -31,10 +31,10 @@ var newData;
                         <div class="m-1 p-2">
                         <div class="card "  style="width: 14rem; height:470px;">
                             <img class="card-img-top" src=${currentMovie.Poster}style="width:60px; height:200px" alt="Card image cap">
-                            <div class="card-body" style="height:50px;">
-                            <h5 class="card-title">${currentMovie.Title} ${currentMovie.Year}</h5>
+                            <div class="card-body" style="height:100px; position:relative;">
+                            <h5 class="card-title">${currentMovie.Title} (${currentMovie.Year})</h5>
                            
-                            <button onclick="saveToWatchlist('${currentMovie.imdbID}')" class="btn btn-primary">Add</button>
+                            <button onclick="saveToWatchlist('${currentMovie.imdbID}')" class="btn btn-primary btn-lg btn-block" style="position:absolute; bottom:0;left:0;">Add</button>
                           </div>  
                         </div>
                         </div>
